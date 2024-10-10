@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-primary;
+  }
+
+  body {
+    @apply bg-background;
+  }
+
+  .subtitle1 {
+    @apply text-subtitle1 leading-[24px] font-[600]
+  }
+
+  .subtitle2 {
+    @apply text-subtitle2 leading-[22px] font-[600]
+  }
+
+  .body1 {
+    @apply text-body1 leading-[24px] font-[500]
+  }
+
+  .body2 {
+    @apply text-body2 leading-[22px] font-[600]
+  }
+
+  .caption {
+    @apply text-caption leading-[18px] font-[500]
+  }
+
+  .overline {
+    @apply text-overline leading-[18px] font-[700] tracking-[1.2px]
+  }
+}
