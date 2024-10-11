@@ -7,7 +7,7 @@ export default function Login() {
   return (
     <>
       <div>
-        <div className="h-[calc(100dvh-76px)] bg-red-50 relative">
+        <div className="h-[calc(100vh-76px)] bg-red-50 relative">
           <img src="/image/ban1.png" alt="banner" className="h-full object-cover filter brightness-75" />
           <div className="bg-[rgba(255,255,255,0.3)] absolute top-0 right-0 h-[100%] backdrop-blur-md flex justify-center items-center sm:w-[40dvw] sm:max-w-[600px]">
 
