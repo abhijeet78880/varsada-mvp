@@ -16,20 +16,20 @@ export default function Login() {
               <div className="w-full flex flex-col gap-4 body1">
                 <label htmlFor="input">
                   Login using email or phone
-                  <input type="text" name="" id="" className="w-full bg-transparent border-2 border-black p-2 rounded-md placeholder-gray-700"
+                  <input type="text" name="" id="" className="w-full bg-transparent border-2 border-black p-2 rounded-md placeholder-gray-700 outline-white"
                     placeholder="Enter Email or Phone" />
                 </label>
                 <label htmlFor="input" className="flex flex-col">
                   Enter OTP
                   <div className="flex">
-                    <input type="text" name="" id="" className="bg-transparent border-2 border-black p-2 rounded-md w-[90%] placeholder-gray-700"
+                    <input type="text" name="" id="" className="bg-transparent border-2 border-black p-2 rounded-md w-[90%] placeholder-gray-700 outline-white"
                       placeholder="- - - -" />
                     <button className="btn-primary2 whitespace-nowrap ml-4">Get OTP</button>
                   </div>
                 </label>
               </div>
               <div className="w-full my-4">
-                <button className="w-full btn-secondary subtitle1" onClick={() => setIsLogedIn(!isLogedIn)}>Login</button>
+                <button className="w-full btn-secondary subtitle1 text-white" onClick={() => setIsLogedIn(!isLogedIn)}>Login</button>
                 <button className="w-full subtitle1 my-4" onClick={() => setIsLogedIn(!isLogedIn)}>skip</button>
               </div>
             </div>

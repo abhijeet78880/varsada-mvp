@@ -8,11 +8,16 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Product from './components/pages/Product.tsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/product",
+    element: <Product />,
   },
 ]);
 
