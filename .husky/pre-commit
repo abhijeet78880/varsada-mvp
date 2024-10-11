@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Run lint-staged in the client folder
+cd client && npm run lint-staged
+
+# Run lint-staged in the server folder
+#cd ../server && npm run lint-staged

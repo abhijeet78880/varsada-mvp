@@ -1,0 +1,24 @@
+{
+  "name": "varsada-mvp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "lint-staged": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amitanshusahu/varsada-mvp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amitanshusahu/varsada-mvp/issues"
+  },
+  "homepage": "https://github.com/amitanshusahu/varsada-mvp#readme",
+  "devDependencies": {
+    "husky": "^9.1.6"
+  }
+}
