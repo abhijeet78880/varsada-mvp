@@ -47,7 +47,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides, interval = 3000 }) => {
             <img
               src={slide.image}
               alt={slide.caption}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover filter brightness-75"
             />
             {/* this is caption they are to be put here */}
             <div className="absolute bottom-5 left-5 text-white text-xl bg-black bg-opacity-50 p-2 rounded">

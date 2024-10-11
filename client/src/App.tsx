@@ -1,21 +1,23 @@
-import Carousel from "./components/ui/Carousel";
+import Home from "./components/pages/Home";
+import Login from "./components/pages/Login";
+import BestSeller from "./components/ui/BestSeller";
+import Category from "./components/ui/Category";
 import Navbar from "./components/ui/Navbar";
+import Trending from "./components/ui/Trending";
+import { useUserStore } from "./store/useStore";
+import "./utils.css"
 
 export default function App() {
-
-  const slides = [
-    { image: '/image/ban1.png', caption: 'Slide 1' },
-    { image: '/image/ban2.png', caption: 'Slide 2' },
-    { image: '/image/ban3.png', caption: 'Slide 3' },
-  ];
+  const { isLogedIn, isLoginSkipped } = useUserStore();
 
   return (
-    <main className=" overflow-hidden w-[100dvw] h-[100dvh]">
+    <main className="overflow-x-hidden w-[100dvw] h-[100dvh]">
         <div className="mx-auto max-w-[1440px] overflow-x-hidden">
           <Navbar />
-          <div className="w-full bg-black">
-            <Carousel slides={slides} interval={4000} />
-          </div>
+          {(!isLogedIn || isLoginSkipped) ? <Login /> : <Home />}
+          <Category />
+          <Trending/>
+          <BestSeller/>
         </div>
     </main>
   )

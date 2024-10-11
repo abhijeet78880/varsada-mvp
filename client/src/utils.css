@@ -1,0 +1,19 @@
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Image Zoom Hover Effect */
+.zoom > img {
+  scale : 1;
+  transition: scale 0.2s ease-in-out;
+}
+.zoom:hover > img{
+  scale: 1.1;
+}
