@@ -17,3 +17,22 @@
 .zoom:hover > img{
   scale: 1.1;
 }
+
+
+/* only for testing of size component may be removed later */
+.size-selection{
+  margin: 20px 0;
+}
+
+.size-btn, .color-btn {
+  border: 0.95px solid #E5E5E5;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 3.8px;
+  width: 40px;
+}
+.size-btn.active {
+  border: 0.95px solid #E5E5E5;
+  background-color: #c473ff;
+}

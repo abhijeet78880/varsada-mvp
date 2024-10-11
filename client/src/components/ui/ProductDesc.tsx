@@ -13,7 +13,7 @@ export default function ProductDesc() {
         <div>
           <ProductHeading />
           <div className="flex gap-4">
-            <Rate disabled defaultValue={2} />
+            <Rate disabled defaultValue={3} />
             <span>126</span>
           </div>
           <ProductPrice />
