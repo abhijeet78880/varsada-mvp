@@ -35,7 +35,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides, interval = 3000 }) => {
   }, [currentSlide, interval]);
 
   return (
-    <div className="relative w-full h-[655px] overflow-hidden">
+    <div className="relative w-full h-[196px] sm:w-full sm:h-[655px] overflow-hidden">
       <div className="relative w-full h-full">
         {slides.map((slide, index) => (
           <div

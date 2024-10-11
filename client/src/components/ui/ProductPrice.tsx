@@ -1,7 +1,10 @@
 export default function ProductPrice() {
   return (
     <>
-      <h4>price 5000rs</h4>   
+      <div>
+        
+      </div>
+      <div>inclusive of all taxes</div> 
     </>
   )
 }
