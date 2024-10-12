@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Heart, Search, Bag, Profile } from '../../../assets/icons';
 import logo from '../../../assets/logo.svg';
 
@@ -21,10 +22,12 @@ export default function Navbar() {
           <Bag />
           varsada bag
         </li>
-        <li className="flex flex-col justify-center items-center">
-          <Heart />
-          dreamlist
-        </li>
+        <Link to="/dreamlist">
+          <li className="flex flex-col justify-center items-center">
+            <Heart />
+            dreamlist
+          </li>
+        </Link>
         <li className="flex flex-col justify-center items-center">
           <Profile />
           profile
