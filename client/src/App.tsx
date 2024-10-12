@@ -11,7 +11,7 @@ export default function App() {
   return (
     <SafeArea>
       <Navbar />
-      {!isLogedIn || isLoginSkipped ? <Login /> : <Home />}
+      {isLogedIn || isLoginSkipped ? <Home /> : <Login /> }
     </SafeArea>
   );
 }

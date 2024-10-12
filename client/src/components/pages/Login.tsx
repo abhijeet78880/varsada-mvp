@@ -2,7 +2,7 @@ import { useUserStore } from "../../store/useStore"
 
 export default function Login() {
 
-  const { isLogedIn, setIsLogedIn } = useUserStore();
+  const { isLogedIn, setIsLogedIn,isLoginSkipped,setIsLoginSkipped } = useUserStore();
 
   return (
     <>
@@ -30,7 +30,7 @@ export default function Login() {
               </div>
               <div className="w-full my-4">
                 <button className="w-full btn-secondary subtitle1 text-white" onClick={() => setIsLogedIn(!isLogedIn)}>Login</button>
-                <button className="w-full subtitle1 my-4" onClick={() => setIsLogedIn(!isLogedIn)}>skip</button>
+                <button className="w-full subtitle1 my-4" onClick={() => setIsLoginSkipped(!isLoginSkipped)}>skip</button>
               </div>
             </div>
 
