@@ -13,7 +13,7 @@ export default function ProductListing() {
       <div className="w-full p-11">
         <ProductListNav />
         <ProductListFilterHeader />
-        <div className="grid grid-cols-[30%_70%] gap-8 my-4">
+        <div className="grid transition-all grid-cols-[30%_70%] gap-8 my-4">
           <Filter />
           <ProductList />
         </div>

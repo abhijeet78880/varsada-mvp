@@ -1,6 +1,9 @@
+@import url(./utils.css);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 
 @layer base {
@@ -107,7 +110,6 @@
   box-shadow: none !important;
   outline: none !important;
 }
-
 .ant-popover-inner{
   border-radius: 4px !important;
   margin-top: 6px;

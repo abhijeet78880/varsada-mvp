@@ -1,4 +1,8 @@
+import BestSeller from '../ui/Home/BestSeller';
 import Carousel from '../ui/Home/Carousel';
+import Category from '../ui/Home/Category';
+import Trending from '../ui/Home/Trending';
+import Footer from '../ui/Layout/Footer';
 
 export default function Home() {
   const slides = [
@@ -9,8 +13,12 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-full bg-black">
+      <div className="w-full fade">
         <Carousel slides={slides} interval={4000} />
+        <Category />
+        <Trending />
+        <BestSeller />
+        <Footer />
       </div>
     </>
   );
