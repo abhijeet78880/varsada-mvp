@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import { Heart, Search, Bag, Profile } from '../../../assets/icons';
 import logo from '../../../assets/logo.svg';
+import { Popover } from 'antd';
+import PopoverProfile from './popover/PopoverProfile';
+import PopoverContent from './popover/Popovercontent';
 
 export default function Navbar() {
   return (
@@ -28,10 +31,12 @@ export default function Navbar() {
             dreamlist
           </li>
         </Link>
-        <li className="flex flex-col justify-center items-center">
-          <Profile />
-          profile
-        </li>
+        <Popover placement="bottomRight" trigger="hover" title={<PopoverProfile/>} content={<PopoverContent/>} style={{borderRadius:"4px"}}>
+          <li className="flex flex-col justify-center items-center">
+            <Profile />
+            profile
+          </li>
+        </Popover>
       </ul>
     </nav>
   );

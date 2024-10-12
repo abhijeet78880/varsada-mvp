@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Product from './components/pages/Product.tsx';
 import ProductListing from './components/pages/ProductListing.tsx';
 import DreamList from './components/pages/DreamList.tsx';
+import ProfileCard from './components/ui/Layout/popover/PopoverProfile.tsx';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
     path: '/dreamlist',
     element: <DreamList />,
   },
+  
 ]);
 
 createRoot(document.getElementById('root')!).render(
