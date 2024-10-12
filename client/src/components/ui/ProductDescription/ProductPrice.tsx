@@ -1,10 +1,14 @@
 import { CoinIcon } from '../../../assets/icons';
 
-export default function ProductPrice() {
+interface prop {
+  price: string;
+}
+
+export default function ProductPrice({ price }: prop) {
   return (
     <>
       <div className="flex gap-4 items-center">
-        <p className="text-3xl font-semibold">₹2,160.00</p>
+        <p className="text-3xl font-semibold">₹{price}</p>
         <p className="text-xl text-accent line-through">₹2160.00</p>
         <p className="text-xl text-black">+</p>
         <span className="flex items-center gap-2">

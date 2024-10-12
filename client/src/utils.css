@@ -5,38 +5,46 @@
 
 /* Hide scrollbar for IE, Edge, and Firefox */
 .no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Image Zoom Hover Effect */
-.zoom  img {
-  scale : 1;
+.zoom img {
+  scale: 1;
   transition: scale 0.2s ease-in-out;
 }
-.zoom:hover  img{
+
+.zoom:hover img {
   scale: 1.1;
 }
 
-.dim:hover img{
+.dim:hover img {
   transition: all 0.2s ease-in-out;
   filter: brightness(90%);
 }
 
-/* only for testing of size component may be removed later */
-.size-selection{
-  margin: 20px 0;
+
+.fade {
+  animation: fade 0.4s ease-in;
 }
 
-.size-btn, .color-btn {
-  border: 0.95px solid #E5E5E5;
-  padding: 10px;
-  margin: 5px;
-  cursor: pointer;
-  border-radius: 3.8px;
-  width: 40px;
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
-.size-btn.active {
-  border: 0.95px solid #E5E5E5;
-  background-color: #c473ff;
+
+.bg-img{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/image/ban1.png');
+}
+
+input:checked{
+  background-color: rgb(0, 255, 149);
 }

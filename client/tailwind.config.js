@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -12,17 +9,20 @@ export default {
         accent: '#FB6F92',
       },
       fontFamily: {
-        primary: ["Urbanist", "sans-serif"]
+        primary: ['Urbanist', 'sans-serif'],
       },
-      fontSize:{
-        subtitle1: "16px",
-        subtitle2: "14px",
-        body1: "16px",
-        body2: "14px",
-        caption: "12px",
-        overline: "12px"
-      }
+      fontSize: {
+        subtitle1: '16px',
+        subtitle2: '14px',
+        body1: '16px',
+        body2: '14px',
+        caption: '12px',
+        overline: '12px',
+      },
+      backgroundImage: {
+        hero: "url('/image/ban1.png')",
+      },
     },
   },
   plugins: [],
-}
+};

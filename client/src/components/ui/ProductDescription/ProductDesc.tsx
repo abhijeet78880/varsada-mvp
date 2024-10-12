@@ -18,7 +18,7 @@ export default function ProductDesc() {
             <Rate disabled defaultValue={3} />
             <span>126</span>
           </div>
-          <ProductPrice />
+          <ProductPrice price="2000" />
           <div className="body1">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Voluptatem, odit? Maxime quae consectetur odio alias voluptatibus
