@@ -1,7 +1,6 @@
-import Carousel from "../ui/Carousel";
+import Carousel from '../ui/Home/Carousel';
 
 export default function Home() {
-
   const slides = [
     { image: '/image/ban1.png', caption: 'Slide 1' },
     { image: '/image/ban2.png', caption: 'Slide 2' },
@@ -14,5 +13,5 @@ export default function Home() {
         <Carousel slides={slides} interval={4000} />
       </div>
     </>
-  )
+  );
 }

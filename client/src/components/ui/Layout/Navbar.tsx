@@ -1,5 +1,5 @@
-import { Heart, Search, Bag, Profile } from "../../assets/icons"
-import logo from '../../assets/logo.svg'
+import { Heart, Search, Bag, Profile } from '../../../assets/icons';
+import logo from '../../../assets/logo.svg';
 
 export default function Navbar() {
   return (
@@ -31,5 +31,5 @@ export default function Navbar() {
         </li>
       </ul>
     </nav>
-  )
+  );
 }

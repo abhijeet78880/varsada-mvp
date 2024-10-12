@@ -1,8 +1,8 @@
-import Footer from "../ui/Footer";
-import Navbar from "../ui/Navbar";
-import ProductDesc from "../ui/ProductDesc";
-import SafeArea from "../ui/SafeArea";
-import SimilarProduct from "../ui/SimilarProduct";
+import Footer from '../ui/Layout/Footer';
+import Navbar from '../ui/Layout/Navbar';
+import ProductDesc from '../ui/Product/ProductDesc';
+import SafeArea from '../ui/Layout/SafeArea';
+import SimilarProduct from '../ui/Product/SimilarProduct';
 
 export default function Product() {
   return (
@@ -12,5 +12,5 @@ export default function Product() {
       <SimilarProduct />
       <Footer />
     </SafeArea>
-  )
+  );
 }

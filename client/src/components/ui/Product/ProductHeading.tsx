@@ -3,5 +3,5 @@ export default function ProductHeading() {
     <>
       <h4>heading</h4>
     </>
-  )
+  );
 }
