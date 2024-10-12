@@ -10,11 +10,11 @@
 }
 
 /* Image Zoom Hover Effect */
-.zoom > img {
+.zoom  img {
   scale : 1;
   transition: scale 0.2s ease-in-out;
 }
-.zoom:hover > img{
+.zoom:hover  img{
   scale: 1.1;
 }
 

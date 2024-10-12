@@ -16,44 +16,44 @@
     @apply sm:text-[64px] font-[600]
   }
 
-  h3{
+  h3 {
     @apply text-[28px] sm:text-[36px] font-[600]
   }
 
-  h4{
+  h4 {
     @apply text-[20px] leading-6 font-[700]
   }
 
   .subtitle1 {
-    @apply text-subtitle1  font-[600]
+    @apply text-subtitle1 font-[600]
   }
 
   .subtitle2 {
-    @apply text-subtitle2  font-[600]
+    @apply text-subtitle2 font-[600]
   }
 
   .body1 {
-    @apply text-body1  font-[500]
+    @apply text-body1 font-[500]
   }
 
   .body2 {
-    @apply text-body2  font-[600]
+    @apply text-body2 font-[600]
   }
 
   .caption {
-    @apply text-caption  font-[500]
+    @apply text-caption font-[500]
   }
 
   .overline {
-    @apply text-overline  font-[700] tracking-[1.2px]
+    @apply text-overline font-[700] tracking-[1.2px]
   }
 
-  .btn-secondary{
+  .btn-secondary {
     @apply bg-secondary px-4 py-4 rounded-md
   }
 
-  .btn-primary2{
-    @apply bg-transparent px-4 rounded-md border-2 border-black 
+  .btn-primary2 {
+    @apply bg-transparent px-4 rounded-md border-2 border-black
   }
 }
 
@@ -63,22 +63,47 @@
   font-size: 16px !important;
   color: #00000099 !important;
 }
-.ant-select-selection-item{
+
+.ant-select-selection-item {
   font-weight: 500 !important;
 }
+
 .ant-checkbox-inner {
   border: 1px solid #00000099 !important;
 }
+
 .ant-checkbox-wrapper {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
   color: #00000099;
 }
-.ant-checkbox-wrapper > span:nth-child(1):hover {
-  scale: 1.1;
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #C473FF !important;
+  border-color: #C473FF !important;
 }
 
-.ant-checkbox-wrapper > span:nth-child(1){
-  margin-right: 10px;
+/* Customizing the checkmark (tick) color */
+.ant-checkbox-checked .ant-checkbox-inner::after {
+  border-color: white !important;
+}
+
+.ant-checkbox-wrapper>span:nth-child(1):hover {
+  outline: 1px solid #C473FF !important;
+}
+
+.ant-slider-handle::after {
+  background-color: black !important;
+  border: 5px solid black !important;
+}
+
+.ant-slider-track {
+  background-color: black !important;
+}
+
+.ant-slider-handle:after,
+.ant-slider-handle:before {
+  box-shadow: none !important;
+  outline: none !important;
 }
