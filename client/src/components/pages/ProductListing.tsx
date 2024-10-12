@@ -1,10 +1,10 @@
 import Footer from '../ui/Layout/Footer';
 import Navbar from '../ui/Layout/Navbar';
 import SafeArea from '../ui/Layout/SafeArea';
-import Filter from '../ui/Product/ProductList/Filter/Filter';
-import ProductList from '../ui/Product/ProductList/ProductList';
-import ProductListFilterHeader from '../ui/Product/ProductList/ProductListFilterHeader';
-import ProductListNav from '../ui/Product/ProductList/ProductListNav';
+import Filter from '../ui/ProductList/Filter/Filter';
+import ProductList from '../ui/ProductList/ProductList';
+import ProductListFilterHeader from '../ui/ProductList/ProductListFilterHeader';
+import ProductListNav from '../ui/ProductList/ProductListNav';
 
 export default function ProductListing() {
   return (

@@ -1,8 +1,8 @@
 import Footer from '../ui/Layout/Footer';
 import Navbar from '../ui/Layout/Navbar';
 import SafeArea from '../ui/Layout/SafeArea';
-import DreamListNav from '../ui/Product/DreamList/DreamListNav';
-import ProductList from '../ui/Product/ProductList/ProductList';
+import DreamListNav from '../ui/DreamList/DreamListNav';
+import ProductList from '../ui/ProductList/ProductList';
 
 export default function DreamList() {
   return (

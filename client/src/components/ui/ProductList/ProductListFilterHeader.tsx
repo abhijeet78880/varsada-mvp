@@ -1,4 +1,4 @@
-import { FilterIcon } from '../../../../assets/icons';
+import { FilterIcon } from '../../../assets/icons';
 
 export default function ProductListFilterHeader() {
   return (

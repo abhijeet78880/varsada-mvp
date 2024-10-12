@@ -1,4 +1,4 @@
-import ProductCard1 from '../ProductCard1';
+import ProductCard1 from '../Product/ProductCard1';
 
 export default function ProductList() {
   return (
