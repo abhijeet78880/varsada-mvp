@@ -1,4 +1,4 @@
-import { Checkbox } from 'antd';
+import { Checkbox, Divider } from 'antd';
 import type { CheckboxProps } from 'antd';
 import ProductCheckOutCard from '../Product/ProductCheckOutCard';
 
@@ -15,6 +15,39 @@ export default function ProductSelect() {
         </Checkbox>
       </div>
 
+      <Divider />
+      <div className="flex flex-col gap-4 mt-4">
+        <div className="flex justify-start items-start gap-4">
+          <Checkbox onChange={onChange}></Checkbox>
+          <ProductCheckOutCard />
+        </div>
+      </div>
+
+      <Divider />
+      <div className="flex flex-col gap-4 mt-4">
+        <div className="flex justify-start items-start gap-4">
+          <Checkbox onChange={onChange}></Checkbox>
+          <ProductCheckOutCard />
+        </div>
+      </div>
+
+      <Divider />
+      <div className="flex flex-col gap-4 mt-4">
+        <div className="flex justify-start items-start gap-4">
+          <Checkbox onChange={onChange}></Checkbox>
+          <ProductCheckOutCard />
+        </div>
+      </div>
+
+      <Divider />
+      <div className="flex flex-col gap-4 mt-4">
+        <div className="flex justify-start items-start gap-4">
+          <Checkbox onChange={onChange}></Checkbox>
+          <ProductCheckOutCard />
+        </div>
+      </div>
+
+      <Divider />
       <div className="flex flex-col gap-4 mt-4">
         <div className="flex justify-start items-start gap-4">
           <Checkbox onChange={onChange}></Checkbox>
