@@ -3,7 +3,7 @@ import { Heart, Search, Bag, Profile } from '../../../assets/icons';
 import logo from '../../../assets/logo.svg';
 import { Popover } from 'antd';
 import PopoverProfile from './popover/PopoverProfile';
-import PopoverContent from './popover/Popovercontent';
+import PopoverContent from './popover/PopoverContent';
 
 export default function Navbar() {
   return (
@@ -31,7 +31,13 @@ export default function Navbar() {
             dreamlist
           </li>
         </Link>
-        <Popover placement="bottomRight" trigger="hover" title={<PopoverProfile/>} content={<PopoverContent/>} style={{borderRadius:"4px"}}>
+        <Popover
+          placement="bottomRight"
+          trigger="hover"
+          title={<PopoverProfile />}
+          content={<PopoverContent />}
+          style={{ borderRadius: '4px' }}
+        >
           <li className="flex flex-col justify-center items-center">
             <Profile />
             profile

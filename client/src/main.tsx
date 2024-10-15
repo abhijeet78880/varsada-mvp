@@ -9,6 +9,7 @@ import Product from './components/pages/Product.tsx';
 import ProductListing from './components/pages/ProductListing.tsx';
 import DreamList from './components/pages/DreamList.tsx';
 import Checkout from './components/pages/Checkout.tsx';
+import CoinActivity from './components/pages/CoinActivity.tsx';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: '/checkout',
     element: <Checkout />,
+  },
+  {
+    path: '/coinactivity',
+    element: <CoinActivity />,
   },
 ]);
 
