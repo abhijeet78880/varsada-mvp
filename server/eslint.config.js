@@ -1,15 +1,18 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import tseslint from 'typescript-eslint'
+// eslint.config.js
+import { ESLint } from 'eslint';
 
-export default tseslint.config(
-  { ignores: ['node_modules', 'dist', 'build'] },
+export default [
   {
-    extends: [js.configs.recommended, ...tseslint.configs.recommended],
+    ignores: ['node_modules', 'dist', 'build'], // Replaces .eslintignore
+  },
+  {
     files: ['**/*.ts'],
     languageOptions: {
-      ecmaVersion: 2020,
-      globals: globals.browser,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+      },
+      parser: '@typescript-eslint/parser',
     },
     plugins: {
       '@typescript-eslint': require('@typescript-eslint/eslint-plugin'),
@@ -21,4 +24,4 @@ export default tseslint.config(
       '@typescript-eslint/explicit-module-boundary-types': 'off',
     },
   },
-)
+];
