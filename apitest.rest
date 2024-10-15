@@ -1,0 +1,11 @@
+### signup
+POST http://localhost:3000/auth/signup 
+Content-Type: application/json
+
+{
+    "name" : "amitwa233", 
+    "email" : "amita@gamil",
+    "phone" : "234234234",
+    "password" : "12345678"
+
+}
