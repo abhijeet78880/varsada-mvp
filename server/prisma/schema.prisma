@@ -13,6 +13,114 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum Role {
+  USER
+  ADMIN
+}
+
+enum SizeType {
+  XS
+  S
+  M
+  L
+  XL
+  XXL
+}
+
+enum Currency {
+  USD
+  EUR
+  INR
+  GBP
+}
+
 model User {
-  id  Int @unique @default(autoincrement())
+  id       Int     @id @default(autoincrement())
+  name     String
+  email    String  @unique
+  password String
+  phone    String  @unique
+  role     Role    @default(USER)
+  googleId String?
+}
+
+model Category {
+  id        Int       @unique @default(autoincrement())
+  name      String
+  thumbnail String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  isActive  Boolean
+  isVisible Boolean
+  products  Product[]
+}
+
+model Product {
+  id             Int            @id @default(autoincrement())
+  name           String
+  description    String?
+  defaultColorId Int?           @unique
+  defaultColor   ProductColor?  @relation("DefaultColor", fields: [defaultColorId], references: [id])
+  
+  categoryId     Int?
+  category       Category?      @relation(fields: [categoryId], references: [id])
+
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+  isActive       Boolean        @default(true)
+  isVisible      Boolean        @default(true)
+
+  colors         ProductColor[]
+  sizes          SizeType[]
+  
+  productTags    ProductTag[]
+}
+
+model ProductColor {
+  id        Int            @id @default(autoincrement())
+  name      String         // e.g., Red, Blue
+  thumbnail String         // Thumbnail for this specific color
+  images    String[]       // Array of images for the color
+
+  productId Int
+  product   Product        @relation(fields: [productId], references: [id])
+
+  price     ProductPrice[]
+  inventory Inventory[]
+  defaultForProduct Product? @relation("DefaultColor")
+}
+
+model Inventory {
+  id          Int          @id @default(autoincrement())
+  colorId     Int
+  color       ProductColor @relation(fields: [colorId], references: [id])
+
+  size        SizeType     // Store size for this color variant
+  quantity    Int          @default(0)
+  restockedAt DateTime?
+}
+
+model ProductPrice {
+  id       Int          @id @default(autoincrement())
+  colorId  Int
+  color    ProductColor @relation(fields: [colorId], references: [id])
+
+  price    Int
+  currency Currency     @default(INR)
+  discount Int?         // Percentage discount
+}
+
+model Tag {
+  id         Int        @id @default(autoincrement())
+  name       String     @unique
+  products   ProductTag[]
+}
+
+model ProductTag {
+  id         Int        @id @default(autoincrement())
+  productId  Int
+  product    Product    @relation(fields: [productId], references: [id])
+  
+  tagId      Int
+  tag        Tag        @relation(fields: [tagId], references: [id])
 }
