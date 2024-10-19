@@ -5,7 +5,7 @@ import Tabs from '../ui/Layout/Tabs';
 
 export default function CoinActivity() {
   const Tab = [
-    { name: 'CoinCredited', component: <CoinCredited /> },
+    { name: 'Coins Credited', component: <CoinCredited /> },
     { name: 'Coins Reedemed', component: <CoinsReedemed /> },
   ];
   return (

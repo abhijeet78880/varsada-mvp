@@ -12,7 +12,7 @@ export default function ProductSizeBox() {
         <h4>Size</h4>
         <button className="body1 text-secondary">Product Measurements</button>
       </div>
-      <div className="grid grid-cols-4 max-w-[230px] gap-6 mt-4">
+      <div className="grid grid-cols-4 max-w-[240px] gap-6 mt-4">
         {sizes.map((size) => (
           <button
             key={size}
