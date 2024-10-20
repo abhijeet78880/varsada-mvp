@@ -12,9 +12,11 @@ app.use(cors({
 app.use(cookieParser());
 
 import authRoutes from './routes/authRoutes'
+import productRoutes from './routes/productRoutes'
 
 // Routes
 app.use('/auth', authRoutes);
+app.use('/api', productRoutes);
 
 app.listen(process.env.PORT || 3000,() => {
   console.log('listening to port 3000')

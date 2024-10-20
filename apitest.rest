@@ -1,5 +1,5 @@
 ### vars
-@cookie = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZSI6IjkzMzczMzg4ODMiLCJpYXQiOjE3MjkwNDg5OTksImV4cCI6MTcyOTEzNTM5OX0.XICZNhj5t-Ll-VUTTLDZMLepoEdQpyTL8pzXQ-IMB8o; Max-Age=86400; Path=/; Expires=Thu, 17 Oct 2024 03:23:19 GMT
+@cookie = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZSI6IjkzMzczMzg4ODMiLCJpYXQiOjE3MjkzOTQ5OTcsImV4cCI6MTcyOTQ4MTM5N30.NsTqZkee8r3Vtv2LbwvjCprQzi6kqGLmD5ic6tnpgeI
 
 ### signup
 POST http://localhost:3000/auth/signup 
@@ -24,3 +24,21 @@ Content-Type: application/json
     "password" : "12345678"
 
 }
+
+### category
+POST http://localhost:3000/api/createcategory 
+Content-Type: application/json
+Cookie: token={{{cookie}}}
+
+{
+    "name" : "Party Wear", 
+    "thumbnail" : "https://tscjxtnxkyqbmkrlrwvc.supabase.co/storage/v1/object/public/varsada/productimg/img2.jpeg?t=2024-10-20T03%3A21%3A22.039Z",
+    "isActive" : true,
+    "isVisible" : true
+
+}
+
+### get all category
+GET  http://localhost:3000/api/getallcategory
+Content-Type: application/json
+
