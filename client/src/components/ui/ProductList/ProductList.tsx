@@ -1,10 +1,10 @@
 import ProductCard1 from '../Product/ProductCard1';
 
-export default function ProductList({
-  isShowFilters,
-}: {
+type Prop = {
   isShowFilters: boolean;
-}) {
+};
+
+export default function ProductList({ isShowFilters }: Prop) {
   return (
     <div
       className={`grid ${isShowFilters ? 'grid-cols-3' : 'grid-cols-4'} gap-4`}

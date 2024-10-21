@@ -11,7 +11,7 @@ export default function DreamList() {
       <div className="w-full p-11">
         <DreamListNav />
         <div className="my-4">
-          <ProductList />
+          <ProductList isShowFilters={false} />
         </div>
       </div>
       <Footer />
