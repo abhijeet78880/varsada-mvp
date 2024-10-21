@@ -11,6 +11,7 @@ import ProductListing from './components/pages/ProductListing.tsx';
 import DreamList from './components/pages/DreamList.tsx';
 import Checkout from './components/pages/Checkout.tsx';
 import CoinActivity from './components/pages/CoinActivity.tsx';
+import Category from './components/pages/Category.tsx';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: '/product',
     element: <Product />,
+  },
+  {
+    path: '/category',
+    element: <Category />,
   },
   {
     path: '/productlist',
