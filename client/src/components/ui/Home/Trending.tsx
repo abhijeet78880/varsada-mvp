@@ -2,7 +2,7 @@ import ProductCard2 from '../Product/ProductCard2';
 
 export default function Trending() {
   return (
-    <section className="pb-11">
+    <section className="pb-11" id="trending">
       <div className="flex flex-col justify-center items-center pb-11">
         <h3 className="capitalize">Trending Today</h3>
         <a href="" className="body1">

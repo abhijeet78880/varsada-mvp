@@ -50,15 +50,15 @@ model Category {
   thumbnail String
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
-  isActive  Boolean
-  isVisible Boolean
+  isActive  Boolean   @default(true)
+  isVisible Boolean   @default(true)
   products  Product[]
 }
 
 model Product {
   id             Int            @id @default(autoincrement())
   name           String
-  description    String?
+  description    String
   defaultColorId Int?           @unique
   defaultColor   ProductColor?  @relation("DefaultColor", fields: [defaultColorId], references: [id])
   
@@ -79,6 +79,7 @@ model Product {
 model ProductColor {
   id        Int            @id @default(autoincrement())
   name      String         // e.g., Red, Blue
+  hexvalue  String         // #0000 hex values
   thumbnail String         // Thumbnail for this specific color
   images    String[]       // Array of images for the color
 

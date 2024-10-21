@@ -30,7 +30,7 @@ export default function Category() {
   if (error) return <p>Error loading categories.</p>;
 
   return (
-    <section className="py-11">
+    <section className="py-11" id="category">
       <div></div>
       <div className="flex flex-col justify-center items-center">
         <h3 className="capitalize">shop by category</h3>

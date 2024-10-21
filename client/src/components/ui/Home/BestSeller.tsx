@@ -2,7 +2,7 @@ import ProductCard2 from '../Product/ProductCard2';
 
 export default function BestSeller() {
   return (
-    <section className="pb-11">
+    <section className="pb-11" id="bestseller">
       <div className="flex flex-col justify-center items-center pb-11">
         <h3 className="capitalize">Our best sellers</h3>
         <a href="" className="body1">

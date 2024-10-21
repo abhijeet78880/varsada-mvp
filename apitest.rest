@@ -25,16 +25,14 @@ Content-Type: application/json
 
 }
 
-### category
+### create category
 POST http://localhost:3000/api/createcategory 
 Content-Type: application/json
 Cookie: token={{{cookie}}}
 
 {
     "name" : "Party Wear", 
-    "thumbnail" : "https://tscjxtnxkyqbmkrlrwvc.supabase.co/storage/v1/object/public/varsada/productimg/img2.jpeg?t=2024-10-20T03%3A21%3A22.039Z",
-    "isActive" : true,
-    "isVisible" : true
+    "thumbnail" : "https://tscjxtnxkyqbmkrlrwvc.supabase.co/storage/v1/object/public/varsada/productimg/img2.jpeg?t=2024-10-20T03%3A21%3A22.039Z"
 
 }
 
@@ -42,3 +40,27 @@ Cookie: token={{{cookie}}}
 GET  http://localhost:3000/api/getallcategory
 Content-Type: application/json
 
+### create product
+POST http://localhost:3000/api/createproduct 
+Content-Type: application/json
+Cookie: token={{{cookie}}}
+
+{
+  "name": "T-Shirt",
+  "description": "A comfortable cotton t-shirt",
+  "colors": [
+    {
+      "name": "Blue",
+      "hexvalue": "#2e90ff",
+      "thumbnail": "https://tscjxtnxkyqbmkrlrwvc.supabase.co/storage/v1/object/public/varsada/productimg/img2.jpeg?t=2024-10-20T03%3A21%3A22.039Z",
+      "images": ["https://tscjxtnxkyqbmkrlrwvc.supabase.co/storage/v1/object/public/varsada/productimg/img2.jpeg?t=2024-10-20T03%3A21%3A22.039Z", "https://tscjxtnxkyqbmkrlrwvc.supabase.co/storage/v1/object/public/varsada/productimg/img2.jpeg?t=2024-10-20T03%3A21%3A22.039Z"],
+      "isDefault": true
+    },
+    {
+      "name": "Red",
+      "hexvalue": "#fa1b1b",
+      "thumbnail": "https://tscjxtnxkyqbmkrlrwvc.supabase.co/storage/v1/object/public/varsada/productimg/img10.webp?t=2024-10-20T06%3A36%3A01.057Z",
+      "images": ["https://tscjxtnxkyqbmkrlrwvc.supabase.co/storage/v1/object/public/varsada/productimg/img10.webp?t=2024-10-20T06%3A36%3A01.057Z", "https://tscjxtnxkyqbmkrlrwvc.supabase.co/storage/v1/object/public/varsada/productimg/img12.webp?t=2024-10-20T06%3A36%3A17.801Z"]
+    }
+  ]
+}

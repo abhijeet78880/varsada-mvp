@@ -5,9 +5,11 @@ export default function PopoverContent() {
     <>
       <div>
         <ul>
-          <li>
-            <span className="p-2">MY Order</span>
-          </li>
+          <Link to={'/checkout'}>
+            <li>
+              <span className="p-2">MY Order</span>
+            </li>
+          </Link>
           <Link to="/dreamlist">
             <li>
               <span className="p-2">Dream List</span>
