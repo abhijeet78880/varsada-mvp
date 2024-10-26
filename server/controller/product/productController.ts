@@ -20,6 +20,8 @@ export async function createCategory(req: Request, res: Response): Promise<Respo
       data: {
         name,
         thumbnail,
+        isActive,
+        isVisible
       }
     })
 

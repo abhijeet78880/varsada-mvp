@@ -12,10 +12,10 @@ export default function ProductImages() {
       />
       <div className="h-[calc(100dvh-200px)] mt-2 overflow-y-auto no-scrollbar">
         <div className="w-full">
-          <Image src="/image/img2.jpeg" />
-          <Image src="/image/img2.jpeg" />
-          <Image src="/image/img2.jpeg" />
-          <Image src="/image/img2.jpeg" />
+          <Image src="/image/DSC04682.JPG" />
+          <Image src="/image/DSC04684.JPG" />
+          <Image src="/image/DSC04686.JPG" />
+          <Image src="/image/DSC04690.JPG" />
         </div>
       </div>
     </div>
